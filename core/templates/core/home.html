@@ -1,0 +1,29 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{%block title %}Bienvenido{% endblock %}
+
+
+
+{% block background %} {% static 'core/img/home-bg.jpg' %}{% endblock %}
+
+{% block content%}
+{% csrf_token %}
+{% block header%}
+  <h1>Juan Carlos Vásquez García</h1>
+  <h4 class="subheading">Profesional en Ingeniería de Sistemas</h4>
+{% endblock%}      
+<div style="text-align: justify;">
+    <p>Saludos !!! Soy Profesional en Ingeniería de Sistemas, honesto, responsable, proactivo, 
+      experiencia en análisis, diseño, desarrollo e implementación de Soluciones Informáticas. He desarrollado 
+      y Liderado muchos proyectos personales y profesionales. Creativo, solidario y recursivo. Amplios conocimientos 
+      contables, administrativos, presupuestos, procesos de negocio y gestión estratégica. 
+      Actualmente trabajo como analista de Soluciones Informáticas  En la EPS Servicio Occidental de Salud, 
+      estoy perfeccionando mis conocimientos con Lenguaje R, Python, Django, JavaScript,
+      Html5 y CSS y diversas base de datos Relacionales y No Relacionales.... </p>
+    <br>
+      <h4><i>! Apasionado por ampliar el conocimiento y sus aplicaciones !!!</i></h4>
+</div>
+
+
+{% endblock%}

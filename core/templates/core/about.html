@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block header %}
+<h1>Acerca de</h1>
+<h4 class="subheading">Biografía</h4>
+{% endblock %}
+
+{% block content %}
+{% csrf_token %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Dime JuanCa</h2>   
+        <p>Nací en Cali, Colombia, soy el segundo de una familia de cuatro hermanos. He recorrido muchos lugares de Colombia y de<br>
+           otros Paises por diversión y laboralmente.<br>
+           Me interesan diversos temas tales como economía, tecnología, ciencias e historía. Me encanta la música, bailar, viajar, las películas de acción, ciencia ficción y documentales;
+           compartir en familia y amigos, apoyar a mis hijos con el logro de sus metas.<br>
+           Tengo como propósito aprender inglés. Me apasionan los retos y brindar soluciones aplicando mis habilidades y experiencia.<br>
+           Me parece genial las posibilidades que brinda internet para la trasmisión del conocimiento soy un entusiasta de los MOOCS.
+        </p>
+        <h5>Quiero aprender cada día más y ponerlo en práctica !!!!</h5>
+    </div>
+</div>
+{% endblock %}
